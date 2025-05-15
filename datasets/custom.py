@@ -7,6 +7,8 @@ Modified from the coco.py file and with help from https://gist.github.com/woctez
 from pathlib import Path
 from .coco import CocoDetection, make_coco_transforms
 
+import datasets.transforms as T
+
 def make_custom_transforms(image_set):
 # Taken from the coco.py file
 
