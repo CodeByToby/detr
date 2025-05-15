@@ -5,6 +5,7 @@ Modified from the coco.py file and with help from https://gist.github.com/woctez
 """
 
 from pathlib import Path
+from .coco import CocoDetection, make_coco_transforms
 
 def build(image_set, args):
     root = Path(args.coco_path)
