@@ -25,7 +25,7 @@ def make_custom_transforms(image_set):
             T.RandomSelect(
                 T.RandomResize(scales, max_size=1333),
                 T.Compose([
-                    T.RandomResize([300, 450, 600]), # More aggressive zoom
+                    T.RandomResize([384, 450, 600]), # More aggressive zoom
                     T.RandomSizeCrop(384, 600),
                     T.RandomResize(scales, max_size=1333),
                 ])
