@@ -317,6 +317,8 @@ def build(args):
         num_classes = 250
     elif args.dataset_file == 'custom':
         num_classes = 5
+    elif args.dataset_file == 'taco':
+        num_classes = 61
 
     device = torch.device(args.device)
 
